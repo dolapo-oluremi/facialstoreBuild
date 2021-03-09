@@ -2,9 +2,22 @@
 :root{
     --cararra: #e7e6e1;
     --ecruWhite: #F7F6E7;
-    --sandyBrown: #f2a154;
+    --sandyBrown: #ffc93c;
     --spectra : #314e52;
 }
+body{
+    background-color: rgb(172, 170, 170);
+}
+/*
+color to put in variables when i refactor code
+155263- for navbar
+
+
+
+*/
+
+
+
 .container{
     margin: 0;
 }
@@ -20,15 +33,16 @@ body{
     padding: 1rem;
   }
 .myItems:hover{
-    border: 1px solid; 
+    border: 1px solid #ffc93c; 
     border-radius: 2.5rem;
+    background-color: #547c87;
 }
   .myItems:hover .card-imgg{
-    border: 1px solid; 
+    border: 1px solid #ffc93c; 
     border-radius: 2.5rem;
 }
 .myItems:hover .card-body{
-    border: 1px solid; 
+    border: 1px solid #ffc93c; 
     border-radius: 2.5rem;
 }
 .card-imgg{
@@ -39,11 +53,25 @@ body{
     border-radius: 2.5rem;
     margin-top: .4rem;
     background-color: rgba(172, 171, 171, 0.5);
-  
+    color: #155263;
 }
-.mask{
+
+.card-title{
+    font-weight: bolder;
+    color: #155263;
+}
+.card-text{
+    font-weight: lighter;
+    color: #2a5865;
+}
+.booking{
+    background-color: #ff9a3c;
+    color: #155263;
+    width: 10rem;
+}
+/* .mask{
     background-color: (255, 255, 255, 0.5);
-}
+} */
 
 #intro-example{
 height: 100vh;
@@ -58,17 +86,28 @@ background-image: url('./images/prod.jpg');
     right: 2rem;
     bottom: 2rem;
     text-align: right;
-   
-   
+}
+.shopBtn{
+   color: #ffc93c;
+   background-color: #155263 ;
+}
+.shopBtn:hover{
+    background-color: #ffc93c ;
+    color: #155263;
 }
 
 .navbar-brand{
     font-family: 'Lobster', cursive;
     font-size: 1.7rem;
+    color: #ffc93c;
 }
 #navbarNav{
     margin-right: 5rem;
 }
+.navbar-color{
+    background-color: #155263 !important;
+}
+
 .nav-link{
     font-size: 1.3rem;
     font-family: 'Tajawal', sans-serif;
@@ -76,13 +115,11 @@ background-image: url('./images/prod.jpg');
     color: var(--sandyBrown) !important;
 }
 .active:hover, .navbar-brand:hover, .nav-link:hover{
-    color: var(--spectra) !important;
+    color: #ff6f3c !important;
 }
 .active{
     color: var(--spectra) !important;
 }
-
-
 
 #services{
     padding: 4rem;
@@ -94,31 +131,26 @@ background-image: url('./images/prod.jpg');
 
 .about-us{
     padding: 1rem;
-    }
+}
 
-    .about-text{
+.about-text{
         word-spacing: .5rem;
         line-height: 4rem;
         font-family: 'Lovers Quarrel', cursive;
         text-align: left;
         font-size: 3.6rem;
-    }
+}
 
 
 #contact{
         padding: 6rem;
         background-color: ;
-    }
-    
-    .about{
+}
+.about{
         margin-top: 5rem;
         margin-bottom: 5rem;
-    }
-
-#shop{
-    padding-top: 5rem;
-    background-color: var(--ecruWhite);
 }
+
 .img-fluid{
     height: 20rem;
     width: 25rem;
@@ -158,14 +190,19 @@ background-image: url('./images/prod.jpg');
   
   .section-name{
       text-align: center;
-      font-family: 'Tangerine', cursive;;
+      font-family: 'Tajawal', cursive;;
       font-size: 4rem;
+      padding-top: 6rem;
+      color:#155263 ;
   }
     
 
+.buyBtn{
+    border-radius: 2.5rem ;
+    background-color: #e7e6e1;
+    color: black;
+}
 
-
-
-
-
-
+.madeby{
+    font-size: 2rem;
+}
